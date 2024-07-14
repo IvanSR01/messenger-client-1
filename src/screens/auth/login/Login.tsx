@@ -22,7 +22,7 @@ const Login = () => {
 			<p className={styles.or}>Or</p>
 			<OAuth />
 			<div className={styles.footer}>
-				You don't have an account? <Link href='/auth/register'>Register</Link>
+				You dont have an account? <Link href='/auth/register'>Register</Link>
 			</div>
 		</div>
 	)

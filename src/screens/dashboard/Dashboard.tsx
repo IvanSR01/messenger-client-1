@@ -5,18 +5,18 @@ import NavBar from './nav-bar/NavBar'
 import Main from './main/Main'
 
 interface IDashBoardPage {
-	page: 'Main' | 'Search' | 'Settings'
+	screen: 'mainpage' | 'Search' | 'Settings'
 }
-const pages: any = {
-	Main: () => <Main />,
+const screens: any = {
+	mainpage: () => <Main />,
 }
 
-const Dashboard: FC<IDashBoardPage> = ({ page }) => {
+const Dashboard: FC<IDashBoardPage> = ({ screen }) => {
 	return (
 		<div className={styles.layout}>
 			<div className={styles.content}>
 				<NavBar />
-				{pages[page]()}
+				{screens[screen]()}
 			</div>
 		</div>
 	)

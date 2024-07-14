@@ -35,8 +35,8 @@ const NavBar: FC = () => {
 	return (
 		<div className={styles.navBar}>
 			{pages.map((page, i) => (
-				<Link href={page.path}>
-					<div key={i} className={styles.navBar__item}>
+				<Link href={page.path} key={i}>
+					<div className={styles.navBar__item}>
 						{pathname.includes(page.path)
 							? page.ActiveIcon()
 							: page.DefaultIcon()}

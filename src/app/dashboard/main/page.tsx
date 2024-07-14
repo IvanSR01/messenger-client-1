@@ -1,5 +1,15 @@
-import Dashboard from '@/screens/dashboard/Dashboard'
+import dynamic from 'next/dynamic'
+const Dashboard = dynamic(
+	() => import('../../../screens/dashboard/Dashboard'),
+	{ ssr: false }
+)
 
-export default function Home() {
-	return <Dashboard page='Main' />
+const page = () => {
+	return (
+		<>
+			<Dashboard screen='mainpage' />
+		</>
+	)
 }
+
+export default page
