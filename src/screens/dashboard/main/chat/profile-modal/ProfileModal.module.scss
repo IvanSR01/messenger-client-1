@@ -1,0 +1,46 @@
+.modal {
+	background-color: #fff;
+	width: clamp(300px, 90vw, 400px);
+	border-radius: 20px;
+	overflow: hidden;
+	.containerAvatar {
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.container {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 20px;
+		.fullName {
+			font-size: clamp(24px, 3vw, 32px);
+			font-weight: 600;
+		}
+		.username {
+			font-size: clamp(18px, 1.5vw, 24px);
+			font-weight: 500;
+			color: #0085f2;
+			cursor: pointer;
+		}
+		.lastSession {
+			font-size: clamp(14px, 1.5vw, 18px);
+			color: #505050;
+		}
+		.toContact {
+			background-color: #0085f2;
+			border: none;
+			border-radius: 20px;
+			padding: 10px 20px;
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+}

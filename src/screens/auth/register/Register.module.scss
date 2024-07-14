@@ -1,0 +1,31 @@
+.register {
+	background-color: #fff;
+	box-shadow: 0px 0px 40px #e6e6e6;
+	width: clamp(300px, 90%, 500px);
+	min-height: 400px;
+	padding: 25px;
+	border-radius: 20px;
+	.heading {
+		font-size: 32px;
+		font-weight: 600;
+	}
+
+	.or {
+		text-align: center;
+		margin-top: 20px;
+		font-weight: 500;
+		font-size: 18px;
+	}
+
+	.footer {
+		margin-top: 25px;
+		padding-top: 10px;
+		border-top: 2px solid #dedede;
+		text-align: center;
+		color: #505050;
+		a {
+			color: #000;
+			font-weight: bold;
+		}
+	}
+}
