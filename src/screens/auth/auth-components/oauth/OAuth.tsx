@@ -7,17 +7,17 @@ const oauthData = [
 	{
 		name: 'Github',
 		Icon: () => <FaGithub />,
-		link: `${process.env.NEXT_PUBLIC_API_URL}/auth/github`,
+		link: `${process.env.NEST_PUBLIC_API_URL}/auth/github`,
 	},
 	{
 		name: 'Google',
 		Icon: () => <FaGoogle />,
-		link: `${process.env.NEXT_PUBLIC_API_URL}/auth/google`,
+		link: `${process.env.NEST_PUBLIC_API_URL}/auth/google`,
 	},
 	{
 		name: 'Vk',
 		Icon: () => <SlSocialVkontakte />,
-		link: `${process.env.NEXT_PUBLIC_API_URL}/auth/vk`,
+		link: `${process.env.NEST_PUBLIC_API_URL}/auth/vk`,
 	},
 ]
 
